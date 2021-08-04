@@ -15,8 +15,8 @@ async function weatherHandle(request, response) {
         return new Forecast(
           n["datetime"],
           n["weather"]["description"],
-          n["high_temp"],
-          n["low_temp"]
+          n["low_temp"],
+          n["High_temp"]
         );
       });
       response.send(weatherArray);
