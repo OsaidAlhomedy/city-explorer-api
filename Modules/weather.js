@@ -16,7 +16,7 @@ async function weatherHandle(request, response) {
           n["datetime"],
           n["weather"]["description"],
           n["low_temp"],
-          n["High_temp"]
+          n["high_temp"]
         );
       });
       response.send(weatherArray);
