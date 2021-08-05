@@ -10,7 +10,7 @@ const weatherHandle = require("./Modules/weather");
 const moviesHandler = require("./Modules/movies");
 server.use(cors());
 
-// http://localhost:3010/
+//http://localhost:3010/
 server.get("/", (request, response) => {
   response.send("Hello from the server");
 });
