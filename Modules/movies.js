@@ -7,7 +7,7 @@ async function moviesHandler(request, response) {
 
   if (memoryArray[key] !== undefined) {
     response.send(memoryArray[key]);
-    console.log("sent from Memory");
+    console.log("sent from movies Memory");
   } else {
     axios.get(URL2).then((result) => {
       let moviesData = result.data.results;
@@ -24,7 +24,7 @@ async function moviesHandler(request, response) {
       });
       memoryArray[q] = movieArray;
       response.send(movieArray);
-      console.log("sent from API");
+      console.log("sent from movies API");
     });
   }
 }
